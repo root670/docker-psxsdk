@@ -46,7 +46,7 @@ RUN wget http://ftpmirror.gnu.org/gcc/gcc-${GCC_VERSION}/gcc-${GCC_VERSION}.tar.
   cd build && \
   ../configure --disable-nls --disable-libada --disable-libssp --disable-libquadmath --disable-libstdc++-v3 --target=mipsel-unknown-elf --prefix='/usr/local/psxsdk' --with-float=soft --enable-languages=c && \
   make && \
-  make install && \
+  make install-strip && \
   cd ../.. && \
   rm -rf gcc-${GCC_VERSION}
 
