@@ -3,10 +3,10 @@
 Cross-compile PS1 homebrew projects using a Docker container.
 
 ## Features
+
 * Based on small & secure Alpine Linux distribution.
 * GCC and binutils versions changeable using  `--build-arg GCC_VERSION=<version>`
-  and `--build-arg BINUTILS_VERSION=<version>`
-* URL to PSXSDK distribution also changeable 
+  and `--build-arg BINUTILS_VERSION=<version>`.
 * Includes cdrkit for building ISO images using mkisofs.
 
 ## Quick Start
@@ -37,4 +37,3 @@ services:
 
 script: docker run -it --rm -v "$PWD:/build" root670/docker-psxsdk make test
 ```
-
