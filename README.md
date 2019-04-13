@@ -1,5 +1,8 @@
 # Docker image for PS1 homebrew development using PSXSDK
 
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/root670/docker-psxsdk.svg)](https://cloud.docker.com/repository/docker/root670/docker-psxsdk/builds)
+[![Docker Pulls](https://img.shields.io/docker/pulls/root670/docker-psxsdk.svg)](https://cloud.docker.com/u/root670/repository/docker/root670/docker-psxsdk)
+
 Cross-compile PS1 homebrew projects using a Docker container.
 
 ## Features
