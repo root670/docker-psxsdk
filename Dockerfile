@@ -52,7 +52,7 @@ RUN wget http://ftpmirror.gnu.org/gcc/gcc-${GCC_VERSION}/gcc-${GCC_VERSION}.tar.
 
 RUN pwd
 # Compile PSXSDK
-RUN git clone --depth 1 -b mkdir-obj https://github.com/root670/psxsdk.git && \
+RUN git clone --depth 1 https://github.com/root670/psxsdk.git && \
   cd psxsdk && \
   sed -i.tmp "s/MAKE_COMMAND = gmake/MAKE_COMMAND = make/g" Makefile.cfg && \
   sed -i.tmp "s/ENABLE_CXX = yes/ENABLE_CXX = no/g" Makefile.cfg && \
